@@ -199,6 +199,10 @@ html{
     position: relative;
     z-index: 10;
 }
+#about-me button a{
+    color: #fff;
+    text-decoration: none;
+}
 #about-me button #overlay{
     position: absolute;
     top: 0;
