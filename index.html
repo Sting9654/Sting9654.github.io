@@ -277,10 +277,12 @@
         <div id="content-section">
             <h2>Contacto</h2>
             <form id="text-me" action="https://formsubmit.co/luismiguelvas91@gmail.com" method="POST">
-                <input type="text" id="Name" placeholder="Nombre" required>
-                <input type="text" id="email" placeholder="Email" required>
-                <input type="text" id="phone" placeholder="Teléfono">
-                <textarea id="message" cols="50" placeholder="Mensaje"></textarea>
+                <input type="text" name="_honey" style="display:none;">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" id="Name" name="Nombre" placeholder="Nombre" required>
+                <input type="text" id="email" name="Correo" placeholder="Email" required>
+                <input type="text" id="phone" name="Teléfono" placeholder="Teléfono">
+                <textarea id="message" cols="50" name="Comentario" placeholder="Mensaje"></textarea>
                 <button>
                     Enviar Mensaje
                     <span id="overlay"></span>
