@@ -276,11 +276,11 @@
     <section id="contact"> 
         <div id="content-section">
             <h2>Contacto</h2>
-            <form id="text-me" onsubmit="mail_me(); reset(); return false">
-                <input type="text" placeholder="Nombre" required>
-                <input type="text" placeholder="Email" required>
-                <input type="text" placeholder="Teléfono">
-                <textarea name="" id="" cols="50" placeholder="Mensaje"></textarea>
+            <form id="text-me" action="https://formsubmit.co/luismiguelvas91@gmail.com" method="POST">
+                <input type="text" id="Name" placeholder="Nombre" required>
+                <input type="text" id="email" placeholder="Email" required>
+                <input type="text" id="phone" placeholder="Teléfono">
+                <textarea name="" id="message" cols="50" placeholder="Mensaje"></textarea>
                 <button>
                     Enviar Mensaje
                     <span id="overlay"></span>
@@ -293,19 +293,5 @@
         <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
     </footer>
     <script src="Script/script.js"></script>
-   <script src="https://smtpjs.com/v3/smtp.js"></script>
-   <script>
-        function mail_me(){
-            Email.send({
-            Host : "smtp.elasticemail.com",
-            Username : "username",
-            Password : "password",
-            To : 'them@website.com',
-            From : "you@isp.com",
-            Subject : "This is the subject",
-            Body : "And this is the body"
-            }).then(message => alert(message));
-        }   
-   </script>
 </body>
 </html>
