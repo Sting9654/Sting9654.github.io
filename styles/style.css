@@ -185,7 +185,7 @@ html{
     font-size: 25px;
     margin-bottom: 10px;
 }
-#about-me button{
+#about-me #content-section button{
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -199,11 +199,7 @@ html{
     position: relative;
     z-index: 10;
 }
-#about-me button a{
-    color: #fff;
-    text-decoration: none;
-}
-#about-me button #overlay{
+#about-me #content-section button #overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -216,7 +212,7 @@ html{
     z-index: -1;
     transition: 1s;
 }
-#about-me button:hover #overlay{
+#about-me #content-section button:hover #overlay{
     width: 100%;
 }
 /*Skills Section*/
