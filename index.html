@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header-container" class="header-container">
+            <header>
+                <div id="profile">
+                    <a href="#">Luis Valenzuela</a>
+                </div>
+                <nav id="nav" class="nav">
+                    <ul>
+                        <li><a href="#home" onclick="select()">Inicio</a></li>
+                        <li><a href="#about-me" onclick="select()">Acerca de mi</a></li>
+                        <li><a href="#skills" onclick="select()">Habilidades</a></li>
+                        <li><a href="#education" onclick="select()">Educación</a></li>
+                        <li><a href="#portfolio" onclick="select()">Portfolio</a></li>
+                        <li><a href="#contact" onclick="select()">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div id="nav-responsive" class="nav-responsive" onclick="showMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
+    </div>
+
+    <section id="home" class="home">
+        <div id="content-banner">
+            <div id="profile-img">
+                <img src="Assets/profile_img.jpg" alt="Profile_picture">
+            </div>
+            <h1><b>Luis Miguel Valenzuela</b></h1>
+            <h2>Desarrollador Junior</h2>
+            <div id="social">
+                <a href="https://www.linkedin.com/in/luis-valenzuela-b623b5200?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bce%2Fete4xRXWyNo%2F%2BWwt%2BwA%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-me">
+        <div id="content-section">
+            <h2>Acerca de mi</h2>
+            <p><span>Hola, soy Luis Miguel Valenzuela</span>. Estudiante de ingeniería de software estoy en mi segundo año en de carrera.<br>
+            mi meta es encontrar una empresa en la cual pueda hacer crecer mi experiencia un lugar donde pueda poner a prueba mis habilidades y conocimientos,
+            para así crecer juntos.
+            </p>
+            <div id="info">
+                <div id="personal-info">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de nacimiento</strong>
+                            01-oct-2002 
+                        </li>
+                        <li>
+                            <strong>Lugar de nacimiento</strong>
+                            Santo Domingo, República Dominicana
+                        </li>
+                        <li>
+                            <Strong>Dirección</Strong>
+                             Santo Domingo Oeste, R.D.
+                        </li> 
+                        <li>
+                            <strong>Estatus Marital</strong>
+                            Soltero 
+                        </li>
+                    </ul>
+                </div>
+                <div id="Interest">
+                    <h3>Intereses</h3>
+                    <div id =interest-container>
+                        <div id="interest">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Videojuegos</span>
+                        </div>
+                        <div id="interest">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Música</span>
+                        </div>
+                        <div id="interest">
+                            <i class="fa-solid fa-dumbbell"></i>                        
+                            <span>Ejercicio</span>
+                        </div>
+                        <div id="interest">
+                            <i class="fa-solid fa-car"></i>
+                            <span>Autos</span>
+                        </div>
+                        <div id="interest">
+                            <i class="fa-solid fa-paw"></i>
+                            <span>Amante de los animales</span>
+                        </div>
+                    </div>
+                    <button>
+                        Currículum <i class="fa-solid fa-file"></i>
+                        <span id="overlay"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div id="content-section">
+            <h2>Habilidades</h2>
+            <div id="row">
+                <div id="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div id="skills">
+                        <span>C#</span>
+                        <div id="progress-bar">
+                            <div id="progress" class="C">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="skills">
+                        <span>Java</span>
+                        <div id="progress-bar">
+                            <div id="progress" class="java">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="skills">
+                        <span>Python</span>
+                        <div id="progress-bar">
+                            <div id="progress" class="python">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="skills">
+                        <span>SQL(Oracle, Microsoft,Mysql)</span>
+                        <div id="progress-bar">
+                            <div id="progress" class="sql" >
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="skills">
+                        <span>HTML y CSS</span>
+                        <div id="progress-bar">
+                            <div id="progress" class="html">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="skills">
+                        <span>JavaScript</span>
+                        <div id="progress-bar">
+                            <div id="progress" class="javascript">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div id="skills">
+                        <span>Liderazgo</span>
+                        <div id="progress-bar">
+                            <div id="progress" class="liderazgo">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="skills">
+                        <span>Trabajo en equipo</span>
+                        <div id="progress-bar">
+                            <div id="progress" class="equipo">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="skills">
+                        <span>Responsabilidad</span>
+                        <div id="progress-bar">
+                            <div id="progress" class="responsabilidad">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="skills">
+                        <span>Comunicación acertiva</span>
+                        <div id="progress-bar">
+                            <div id="progress" class="comunicacion">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="skills">
+                        <span>Perseverancia</span>
+                        <div id="progress-bar">
+                            <div id="progress" class="perseverancia">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="skills">
+                        <span>Inteligencia emocional</span>
+                        <div id="progress-bar">
+                            <div id="progress" class="inteligencia">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="skills">
+                        <span>Creatividad</span>
+                        <div id="progress-bar">
+                            <div id="progress" class="creatividad">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div id="content-section">
+            <h2>Educación</h2>
+                <div id="row">
+                    <div id="col">
+                    <h3>Educación Superior</h3>
+                    <ul>
+                        <li>
+                            <strong>Ingeniería de Software</strong>
+                            (Estudiante activo desde 2021)<br>Universidad Federico Henriquez y Carvajal (<b><a href="https://ufhec.edu.do/">UFHEC</a></b>)
+                        </li>
+                    </ul>
+                    </div>
+                    <div id="col">
+                        <i class="fa-sharp fa-solid fa-file-certificate"></i>
+                        <h3>Cursos Técnicos</h3>
+                        <ul>
+                            <li>
+                                <strong>Ingles nivel VI</strong>
+                                Escuela de Idiomas de la <b><a href="https://uasd.edu.do/facultad-humanidades/escuelas/escuela-de-idiomas/">UASD</a></b>
+                            </li>
+                            <li>
+                                <strong>Contabilidad Auxiliar</strong>
+                                Instituto Tecnologico Romana (<b><a href="https://iterom.edu.do">ITEROM</a></b>)
+                            </li>
+                            <li>
+                                <strong>Gestion Administrativa y Tributaria</strong>
+                                Colegio Experimental Federico Henriquez y Carvajal (<b>CEFHEC</b>)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="portfolio">
+        <div id="content-section">
+            <h2>Proyectos</h2>
+            <div id="gallery">
+                    <img src="Assets/c-sharp.png">
+                    <div id="description"> 
+                        <h3>Lirax</h3>
+                        <p>Es un proyecto aùn en desarrollo para la gestion de productos y clientes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact"> 
+        <div id="content-section">
+            <h2>Contacto</h2>
+            <form id="text-me" onsubmit="mail_me(); reset(); return false">
+                <input type="text" placeholder="Nombre" required>
+                <input type="text" placeholder="Email" required>
+                <input type="text" placeholder="Teléfono">
+                <textarea name="" id="" cols="50" placeholder="Mensaje"></textarea>
+                <button>
+                    Enviar Mensaje
+                    <span id="overlay"></span>
+                </button>
+            </form>
+        </div>
+    </section>
+    
+    <footer id="footer">
+        <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+    </footer>
+    <script src="Script/script.js"></script>
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+   <script>
+        function mail_me(){
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "username",
+            Password : "password",
+            To : 'them@website.com',
+            From : "you@isp.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+            }).then(message => alert(message));
+        }   
+   </script>
+</body>
+</html>
