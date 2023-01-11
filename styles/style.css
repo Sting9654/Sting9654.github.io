@@ -166,8 +166,8 @@ html{
    text-align: center;
 }
 #about-me #info #Interest #interest-container #interest{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color:#191919 ;
     border-radius: 10%;
     margin: 15px 15px 15px 25px;
