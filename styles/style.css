@@ -28,7 +28,7 @@ html{
 #header-container header #profile a{
     font-family: 'Poppins', sans-serif;
     font-size: 35px ;
-    color: #4200FF;
+    color: #87CEEB;
     text-decoration: none;
 }
 #header-container header ul{
@@ -44,7 +44,7 @@ html{
     text-decoration: none;
 }
 #header-container header nav ul li a:hover{
-    color: #4200FF;
+    color: #87CEEB;
 }
 #nav-responsive{
     background-color:transparent;
@@ -73,7 +73,7 @@ html{
 }
 #home #content-banner img{
     margin-top: 40px;
-    border: 5px double #4200FF;
+    border: 5px double #87CEEB;
     display: block;
     width: 80%;
     margin: auto;
@@ -102,7 +102,7 @@ html{
     transition: .3s;
 }
 #home #content-banner #social a:hover{
-    background-color: #4200FF;
+    background-color: #87CEEB;
 }
 #about-me{
     background-color: #191919;
@@ -125,7 +125,7 @@ html{
     margin-bottom: 30px;
 }
 #about-me #content-section p span{
-    color: #4200FF;
+    color: #87CEEB;
     font-weight: bold;
 }
 #about-me #info{
@@ -147,11 +147,11 @@ html{
 }
 #about-me #info #personal-info ul li strong{
     display: inline-block;
-    color: #4200FF;
+    color: #87CEEB;
     width: 100px;
 }
 #about-me #info #personal-info ul li span{
-    color: #4200FF;
+    color: #87CEEB;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
@@ -166,8 +166,8 @@ html{
    text-align: center;
 }
 #about-me #info #Interest #interest-container #interest{
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     background-color:#191919 ;
     border-radius: 10%;
     margin: 15px 15px 15px 25px;
@@ -179,13 +179,13 @@ html{
     transition: .3s;
 }
 #about-me #info #Interest #interest-container #interest:hover{
-    background-color: #4200FF;
+    background-color: #87CEEB;
 }
 #about-me #info #Interest #interest-container #interest i{
     font-size: 25px;
     margin-bottom: 10px;
 }
-#about-me #content-section button{
+#about-me button{
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -199,7 +199,11 @@ html{
     position: relative;
     z-index: 10;
 }
-#about-me #content-section button #overlay{
+#about-me button a{
+    color: #fff;
+    text-decoration: none;
+}
+#about-me button #overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -207,12 +211,12 @@ html{
     bottom: 0;
     width: 0;
     height: 100%;
-    background-color: #4200FF;
+    background-color: #87CEEB;
     border-radius: 5%;
     z-index: -1;
     transition: 1s;
 }
-#about-me #content-section button:hover #overlay{
+#about-me button:hover #overlay{
     width: 100%;
 }
 /*Skills Section*/
@@ -256,7 +260,7 @@ html{
     margin-bottom: 30px;
 }
 #skills #skills #progress{
-    background-color: #4200FF;
+    background-color: #87CEEB;
     position: absolute;
     top: 0;
     left: 0;
@@ -266,7 +270,7 @@ html{
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: #4200FF;
+    background-color: #87CEEB;
     border-radius: 50%;
     line-height: 40px;
     text-align: center;
@@ -419,15 +423,15 @@ html{
     font-size:  25px;
     font-weight: bold;
     display: inline-block;
-    color: #4200FF;
+    color: #87CEEB;
     width: 100%;
 }
 #education #row #col ul li b a{
-    color: #4200FF;
+    color: #87CEEB;
     text-decoration: none;
 }
 #education #row #col ul li b{
-    color: #4200FF;
+    color: #87CEEB;
 }
 #portfolio{
     background-color: #191919;
@@ -470,7 +474,7 @@ html{
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(rgba(66,0,255,0.5),rgba(66,0,255,0.5));
+    background: linear-gradient(rgba(135, 206, 235, 0.7),rgba(135, 206, 235, 0.7));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -541,7 +545,7 @@ html{
     bottom: 0;
     width: 0;
     height: 100%;
-    background-color: #4200FF;
+    background-color: #87CEEB;
     border-radius: 5%;
     z-index: -1;
     transition: 1s;
@@ -563,7 +567,7 @@ footer{
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #4200FF;
+    background-color: #87CEEB;
     color: #fff;
     position: absolute;
     left: 50%;
