@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  background-color: #121214;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.card {
+  background-color: #121214;
+  height: 900px;
+  width: 600px;
+  block-size: auto;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  box-shadow: 0px 0px 25px 0px #F2F0EB;
+}
+
+.card:hover {
+  animation: rainbow 5s infinite alternate;
+}
+
+@keyframes rainbow {
+  0% {
+    box-shadow: 0px 0px 25px 0px #EBF0F9;
+  }
+
+  20% {
+    box-shadow: 0px 0px 25px 0px #00D1CF;
+  }
+
+  40% {
+    box-shadow: 0px 0px 25px 0px #F2F0EB;
+  }
+
+  60% {
+    box-shadow: 0px 0px 25px 0px #9820C5;
+  }
+
+  80% {
+    box-shadow: 0px 0px 25px 0px #EBF0F9;
+  }
+
+  100% {
+    box-shadow: 0px 0px 25px 0px #00D1CF;
+  }
+}
+
+@keyframes text-rainbow {
+  0% {
+    background: linear-gradient(to top, #F2F0EB, #00D1CF, #EBF0F9, #9820C5);
+    -webkit-background-clip: text;
+    background-color: text;
+  }
+
+  20% {
+    background: linear-gradient(to top, #9820C5, #EBF0F9, #00D1CF, #F2F0EB);
+    -webkit-background-clip: text;
+    background-color: text;
+  }
+
+  40% {
+    background: linear-gradient(to top, #F2F0EB, #00D1CF, #EBF0F9, #9820C5);
+    -webkit-background-clip: text;
+    background-color: text;
+  }
+
+  60% {
+    background: linear-gradient(to top, #9820C5, #EBF0F9, #00D1CF, #F2F0EB);
+    -webkit-background-clip: text;
+    background-color: text;
+  }
+
+  80% {
+    background: linear-gradient(to top, #F2F0EB, #00D1CF, #EBF0F9, #9820C5);
+    -webkit-background-clip: text;
+    background-color: text;
+  }
+
+  100% {
+    background: linear-gradient(to top, #9820C5, #EBF0F9, #00D1CF, #F2F0EB);
+    -webkit-background-clip: text;
+    background-color: text;
+  }
+}
+
+h1 {
+  font-weight: 900;
+  text-align: center;
+  font-size: 100px;
+  -webkit-background-clip: text;
+  background-color: text;
+  color: transparent;
+  animation: text-rainbow 2s infinite alternate-reverse;
+}
+
+h2 {
+  font-weight: 300;
+  text-align: justify;
+  font-size: 40px;
+  color: #F2F0EB;
+}
+
+p {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #F2F0EB;
+}
+
+.fa-linkedin {
+  margin-bottom: 10px;
+  font-size: 50px;
+  color: #2E3135;
+}
+
+.fa-linkedin:hover {
+  color: #0077B5;
+}
+
+.img-container {
+  border-top: #F2F0EB solid 2.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #F2F0EB;
+  border-radius: 5px;
+}
+
+.button-link i {
+  margin-bottom: 5px;
+}
+
+.button-link span {
+  font-size: 14px;
+}
