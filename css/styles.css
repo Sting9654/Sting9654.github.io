@@ -2,6 +2,47 @@
 
 body {
   background-color: #121214;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.bubbles {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bubbles span {
+  position: relative;
+  width: 3vh;
+  height: 3vh;
+  background: #00D1CF;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #00d1ce44, 0 0 50px #00D1CF, 0 0 100px #00D1CF;
+  animation: star_shower 15s linear infinite;
+  animation-duration: calc(125s/var(--i));
+}
+
+.bubbles span:nth-child(even) {
+  background: #9820C5;
+  box-shadow: 0 0 0 10px #9920c544, 0 0 50px #9820C5, 0 0 100px #9820C5;
+}
+
+@keyframes star_shower {
+  0% {
+    transform: translateY(100vh)scale(0);
+    background: #EBF0F9;
+    box-shadow: 0 0 0 10px #ebf0f944, 0 0 50px #EBF0F9, 0 0 100px #EBF0F9;
+  }
+
+  100% {
+    transform: translateY(-5vh)scale(1);
+  }
+
+
 }
 
 .roboto-light {
@@ -11,16 +52,15 @@ body {
 
 .card {
   background-color: #121214;
-  height: 900px;
-  width: 600px;
-  block-size: auto;
+  height: 50vh;
+  width: 40vh;
   border-radius: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 10px;
-  box-shadow: 0px 0px 25px 0px #F2F0EB;
+  padding: 2vh;
+  box-shadow: 0px 0px 2vh 0px #F2F0EB;
 }
 
 .card:hover {
@@ -94,7 +134,7 @@ body {
 h1 {
   font-weight: 900;
   text-align: center;
-  font-size: 100px;
+  font-size: 10vh;
   -webkit-background-clip: text;
   background-color: text;
   color: transparent;
@@ -104,20 +144,20 @@ h1 {
 h2 {
   font-weight: 300;
   text-align: justify;
-  font-size: 40px;
+  font-size: 4vh;
   color: #F2F0EB;
 }
 
 p {
   text-align: justify;
-  font-size: 20px;
+  font-size: 2vh;
   font-weight: lighter;
   color: #F2F0EB;
 }
 
 .fa-linkedin {
-  margin-bottom: 10px;
-  font-size: 50px;
+  margin-bottom: 1vh;
+  font-size: 5vh;
   color: #2E3135;
 }
 
@@ -137,7 +177,7 @@ p {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 1vh 2vh;
   color: #F2F0EB;
   border-radius: 5px;
 }
@@ -147,5 +187,5 @@ p {
 }
 
 .button-link span {
-  font-size: 14px;
+  font-size: 1.4vh;
 }
